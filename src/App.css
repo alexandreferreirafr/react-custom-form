@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -13,7 +17,7 @@
   }
 }
 
-.App-header {
+.App-shell {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -35,4 +39,46 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  margin-top: 2rem;
+  width: 24rem;
+}
+
+.button {
+  width: 100%;
+  max-width: 24rem;
+  padding: 0.5rem 1rem;
+  margin-top: .8rem;
+  border: 0;
+  background-color: cornflowerblue;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color .5s ease;
+}
+
+.button:hover {
+  background-color:royalblue;
+}
+
+.button--secondary {
+  background-color: lightgray;
+  color: black;
+}
+
+.button--secondary:hover {
+  background-color: darkgrey;
+}
+
+.input {
+  width: 100%;
+  max-width: 24rem;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border: 0;
 }
